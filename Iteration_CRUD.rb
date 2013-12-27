@@ -23,8 +23,6 @@ class Iteration_CRUD
     config = {:base_url => "https://rally1.rallydev.com/slm"}
     config = {:workspace => workspace}
     config[:project] = project
-    config[:username] = "username"
-    config[:password] = "password"
     config[:headers] = headers #from RallyAPI::CustomHttpHeader.new()
 
     @rally = RallyAPI::RallyRestJson.new(config)
